@@ -1,0 +1,3450 @@
+{
+  "name": "ankugup-node",
+  "chef_environment": "dev",
+  "normal": {
+    "tags": null
+  },
+  "automatic": {
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "62",
+        "model_name": "Intel(R) Xeon(R) CPU E5-4650 v2 @ 2.40GHz",
+        "stepping": "4",
+        "mhz": "2400.000",
+        "cache_size": "25600 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "1",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "nopl",
+          "xtopology",
+          "tsc_reliable",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "pclmulqdq",
+          "ssse3",
+          "cx16",
+          "pcid",
+          "sse4_1",
+          "sse4_2",
+          "x2apic",
+          "popcnt",
+          "aes",
+          "xsave",
+          "avx",
+          "f16c",
+          "rdrand",
+          "hypervisor",
+          "lahf_lm",
+          "ida",
+          "arat",
+          "pln",
+          "pts",
+          "dtherm",
+          "fsgsbase",
+          "smep"
+        ]
+      },
+      "1": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "62",
+        "model_name": "Intel(R) Xeon(R) CPU E5-4650 v2 @ 2.40GHz",
+        "stepping": "4",
+        "mhz": "2400.000",
+        "cache_size": "25600 KB",
+        "physical_id": "2",
+        "core_id": "0",
+        "cores": "1",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "nopl",
+          "xtopology",
+          "tsc_reliable",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "pclmulqdq",
+          "ssse3",
+          "cx16",
+          "pcid",
+          "sse4_1",
+          "sse4_2",
+          "x2apic",
+          "popcnt",
+          "aes",
+          "xsave",
+          "avx",
+          "f16c",
+          "rdrand",
+          "hypervisor",
+          "lahf_lm",
+          "ida",
+          "arat",
+          "pln",
+          "pts",
+          "dtherm",
+          "fsgsbase",
+          "smep"
+        ]
+      },
+      "total": 2,
+      "real": 2
+    },
+    "filesystem": {
+      "/dev/mapper/rootvg-root": {
+        "kb_size": "10246144",
+        "kb_used": "3080500",
+        "kb_available": "7165644",
+        "percent_used": "31%",
+        "mount": "/",
+        "total_inodes": "10256384",
+        "inodes_used": "139658",
+        "inodes_available": "10116726",
+        "inodes_percent_used": "2%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "9df82ef1-5b8a-4bc0-accc-d40716b21b71"
+      },
+      "devtmpfs": {
+        "kb_size": "3996132",
+        "kb_used": "0",
+        "kb_available": "3996132",
+        "percent_used": "0%",
+        "mount": "/dev",
+        "total_inodes": "999033",
+        "inodes_used": "353",
+        "inodes_available": "998680",
+        "inodes_percent_used": "1%",
+        "fs_type": "devtmpfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "seclabel",
+          "size=3996132k",
+          "nr_inodes=999033",
+          "mode=755"
+        ]
+      },
+      "tmpfs": {
+        "kb_size": "524288",
+        "kb_used": "4",
+        "kb_available": "524284",
+        "percent_used": "1%",
+        "mount": "/tmp",
+        "total_inodes": "1001472",
+        "inodes_used": "9",
+        "inodes_available": "1001463",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime",
+          "seclabel",
+          "size=524288k"
+        ]
+      },
+      "/dev/mapper/rootvg-var": {
+        "kb_size": "8181760",
+        "kb_used": "452688",
+        "kb_available": "7729072",
+        "percent_used": "6%",
+        "mount": "/var",
+        "total_inodes": "8192000",
+        "inodes_used": "5341",
+        "inodes_available": "8186659",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "02d8f772-287f-4069-b469-e4cf796d87d9"
+      },
+      "/dev/mapper/rootvg-apps": {
+        "kb_size": "63244112",
+        "kb_used": "32928",
+        "kb_available": "63211184",
+        "percent_used": "1%",
+        "mount": "/apps",
+        "total_inodes": "63275008",
+        "inodes_used": "3",
+        "inodes_available": "63275005",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "a1ba36e0-21ba-4672-b2a2-4cb54bd0a87d"
+      },
+      "/dev/mapper/rootvg-home": {
+        "kb_size": "6150144",
+        "kb_used": "33012",
+        "kb_available": "6117132",
+        "percent_used": "1%",
+        "mount": "/home",
+        "total_inodes": "6160384",
+        "inodes_used": "20",
+        "inodes_available": "6160364",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "c817266d-2ab0-4264-9b02-af11de4a11d1"
+      },
+      "/dev/sda1": {
+        "kb_size": "559788",
+        "kb_used": "152284",
+        "kb_available": "407504",
+        "percent_used": "28%",
+        "mount": "/boot",
+        "total_inodes": "563200",
+        "inodes_used": "334",
+        "inodes_available": "562866",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "8ddce636-3150-4273-b09f-7461a89d7538"
+      },
+      "proc": {
+        "mount": "/proc",
+        "fs_type": "proc",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "sysfs": {
+        "mount": "/sys",
+        "fs_type": "sysfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "securityfs": {
+        "mount": "/sys/kernel/security",
+        "fs_type": "securityfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "devpts": {
+        "mount": "/dev/pts",
+        "fs_type": "devpts",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "noexec",
+          "relatime",
+          "seclabel",
+          "gid=5",
+          "mode=620",
+          "ptmxmode=000"
+        ]
+      },
+      "cgroup": {
+        "mount": "/sys/fs/cgroup/hugetlb",
+        "fs_type": "cgroup",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime",
+          "hugetlb"
+        ]
+      },
+      "pstore": {
+        "mount": "/sys/fs/pstore",
+        "fs_type": "pstore",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "configfs": {
+        "mount": "/sys/kernel/config",
+        "fs_type": "configfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "selinuxfs": {
+        "mount": "/sys/fs/selinux",
+        "fs_type": "selinuxfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "systemd-1": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=34",
+          "pgrp=1",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "direct"
+        ]
+      },
+      "mqueue": {
+        "mount": "/dev/mqueue",
+        "fs_type": "mqueue",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "hugetlbfs": {
+        "mount": "/dev/hugepages",
+        "fs_type": "hugetlbfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "debugfs": {
+        "mount": "/sys/kernel/debug",
+        "fs_type": "debugfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "binfmt_misc": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "binfmt_misc",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "nfsd": {
+        "mount": "/proc/fs/nfsd",
+        "fs_type": "nfsd",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "sunrpc": {
+        "mount": "/var/lib/nfs/rpc_pipefs",
+        "fs_type": "rpc_pipefs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "/dev/sda2": {
+        "fs_type": "LVM2_member",
+        "uuid": "WzJZ77-sDi2-bDC2-MSXp-Vp3U-M5of-11E6KE"
+      },
+      "/dev/mapper/rootvg-swap": {
+        "fs_type": "swap",
+        "uuid": "2b7be566-2c71-4658-a22c-0c9c1efbf236"
+      },
+      "rootfs": {
+        "mount": "/",
+        "fs_type": "rootfs",
+        "mount_options": [
+          "rw"
+        ]
+      }
+    },
+    "kernel": {
+      "name": "Linux",
+      "release": "3.10.0-229.14.1.el7.x86_64",
+      "version": "#1 SMP Tue Aug 25 11:21:22 EDT 2015",
+      "machine": "x86_64",
+      "os": "GNU/Linux",
+      "modules": {
+        "sr_mod": {
+          "size": "22416",
+          "refcount": "0"
+        },
+        "cdrom": {
+          "size": "42556",
+          "refcount": "1"
+        },
+        "coretemp": {
+          "size": "13435",
+          "refcount": "0"
+        },
+        "crct10dif_pclmul": {
+          "size": "14289",
+          "refcount": "0"
+        },
+        "crc32_pclmul": {
+          "size": "13113",
+          "refcount": "0"
+        },
+        "crc32c_intel": {
+          "size": "22079",
+          "refcount": "0"
+        },
+        "ghash_clmulni_intel": {
+          "size": "13259",
+          "refcount": "0"
+        },
+        "ppdev": {
+          "size": "17671",
+          "refcount": "0"
+        },
+        "aesni_intel": {
+          "size": "69884",
+          "refcount": "0"
+        },
+        "lrw": {
+          "size": "13286",
+          "refcount": "1"
+        },
+        "gf128mul": {
+          "size": "14951",
+          "refcount": "1"
+        },
+        "glue_helper": {
+          "size": "13990",
+          "refcount": "1"
+        },
+        "ablk_helper": {
+          "size": "13597",
+          "refcount": "1"
+        },
+        "cryptd": {
+          "size": "20359",
+          "refcount": "3"
+        },
+        "vmw_balloon": {
+          "size": "13415",
+          "refcount": "0"
+        },
+        "pcspkr": {
+          "size": "12718",
+          "refcount": "0"
+        },
+        "serio_raw": {
+          "size": "13462",
+          "refcount": "0"
+        },
+        "ahci": {
+          "size": "29870",
+          "refcount": "0"
+        },
+        "vmw_vmci": {
+          "size": "67106",
+          "refcount": "0"
+        },
+        "i2c_piix4": {
+          "size": "22106",
+          "refcount": "0"
+        },
+        "libahci": {
+          "size": "32009",
+          "refcount": "1"
+        },
+        "shpchp": {
+          "size": "37032",
+          "refcount": "0"
+        },
+        "parport_pc": {
+          "size": "28165",
+          "refcount": "0"
+        },
+        "parport": {
+          "size": "42348",
+          "refcount": "2"
+        },
+        "nfsd": {
+          "size": "290215",
+          "refcount": "1"
+        },
+        "auth_rpcgss": {
+          "size": "59343",
+          "refcount": "1"
+        },
+        "nfs_acl": {
+          "size": "12837",
+          "refcount": "1"
+        },
+        "lockd": {
+          "size": "93977",
+          "refcount": "1"
+        },
+        "sunrpc": {
+          "size": "295293",
+          "refcount": "7"
+        },
+        "binfmt_misc": {
+          "size": "17468",
+          "refcount": "1"
+        },
+        "xfs": {
+          "size": "915019",
+          "refcount": "5"
+        },
+        "libcrc32c": {
+          "size": "12644",
+          "refcount": "1"
+        },
+        "ata_generic": {
+          "size": "12910",
+          "refcount": "0"
+        },
+        "pata_acpi": {
+          "size": "13038",
+          "refcount": "0"
+        },
+        "sd_mod": {
+          "size": "45499",
+          "refcount": "3"
+        },
+        "crc_t10dif": {
+          "size": "12714",
+          "refcount": "1"
+        },
+        "crct10dif_common": {
+          "size": "12595",
+          "refcount": "2"
+        },
+        "vmwgfx": {
+          "size": "179730",
+          "refcount": "1"
+        },
+        "drm_kms_helper": {
+          "size": "98226",
+          "refcount": "1"
+        },
+        "ata_piix": {
+          "size": "35038",
+          "refcount": "0"
+        },
+        "ttm": {
+          "size": "93488",
+          "refcount": "1"
+        },
+        "vmw_pvscsi": {
+          "size": "23114",
+          "refcount": "2"
+        },
+        "libata": {
+          "size": "218854",
+          "refcount": "5"
+        },
+        "vmxnet3": {
+          "size": "49501",
+          "refcount": "0"
+        },
+        "drm": {
+          "size": "311588",
+          "refcount": "4"
+        },
+        "i2c_core": {
+          "size": "40325",
+          "refcount": "3"
+        },
+        "floppy": {
+          "size": "69417",
+          "refcount": "0"
+        },
+        "dm_mirror": {
+          "size": "22135",
+          "refcount": "0"
+        },
+        "dm_region_hash": {
+          "size": "20862",
+          "refcount": "1"
+        },
+        "dm_log": {
+          "size": "18411",
+          "refcount": "2"
+        },
+        "dm_mod": {
+          "size": "104038",
+          "refcount": "17"
+        }
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "16383996kB",
+        "free": "16383996kB"
+      },
+      "total": "8011776kB",
+      "free": "6663856kB",
+      "buffers": "2320kB",
+      "cached": "729564kB",
+      "active": "638384kB",
+      "inactive": "224224kB",
+      "dirty": "24kB",
+      "writeback": "0kB",
+      "anon_pages": "130864kB",
+      "mapped": "31860kB",
+      "slab": "330748kB",
+      "slab_reclaimable": "260972kB",
+      "slab_unreclaim": "69776kB",
+      "page_tables": "4452kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "20389884kB",
+      "committed_as": "379896kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "173236kB",
+      "vmalloc_chunk": "34359561212kB"
+    },
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "65536",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            }
+          ]
+        },
+        "eno16777984": {
+          "type": "eno1677798",
+          "number": "4",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "00:50:56:15:31:DC": {
+              "family": "lladdr"
+            },
+            "192.168.57.3": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.57.255",
+              "scope": "Global"
+            },
+            "fe80::250:56ff:fe15:31dc": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "arp": {
+            "192.168.57.4": "00:50:56:15:34:14",
+            "192.168.57.1": "00:50:56:15:31:9b"
+          },
+          "routes": [
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "192.168.57.1"
+            },
+            {
+              "destination": "169.254.0.0/16",
+              "family": "inet",
+              "scope": "link",
+              "metric": "1002"
+            },
+            {
+              "destination": "192.168.57.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.57.3"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        }
+      },
+      "default_interface": "eno16777984",
+      "default_gateway": "192.168.57.1"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "rx": {
+              "bytes": "7895",
+              "packets": "101",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "7895",
+              "packets": "101",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "eno16777984": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "5683769",
+              "packets": "20491",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "21414895",
+              "packets": "26302",
+              "errors": "0",
+              "drop": "22",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "192.168.57.3",
+    "macaddress": "00:50:56:15:31:DC",
+    "ip6address": "fe80::250:56ff:fe15:31dc",
+    "lsb": {
+      "id": "RedHatEnterpriseServer",
+      "description": "Red Hat Enterprise Linux Server release 7.1 (Maipo)",
+      "release": "7.1",
+      "codename": "Maipo"
+    },
+    "os": "linux",
+    "os_version": "3.10.0-229.14.1.el7.x86_64",
+    "platform": "redhat",
+    "platform_version": "7.1",
+    "platform_family": "rhel",
+    "uptime_seconds": 466575,
+    "uptime": "5 days 09 hours 36 minutes 15 seconds",
+    "idletime_seconds": 931252,
+    "idletime": "10 days 18 hours 40 minutes 52 seconds",
+    "virtualization": {
+      "systems": {
+        "vmware": "guest"
+      },
+      "system": "vmware",
+      "role": "guest"
+    },
+    "languages": {
+      "c": {
+        "gcc": {
+          "version": "4.8.3",
+          "description": "gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) "
+        },
+        "glibc": {
+          "version": "2.17",
+          "description": "GNU C Library (GNU libc) stable release version 2.17, by Roland McGrath et al."
+        }
+      },
+      "lua": {
+        "version": "5.1.4"
+      },
+      "perl": {
+        "version": "5.16.3",
+        "archname": "x86_64-linux-thread-multi"
+      },
+      "php": {
+        "version": "5.4.16",
+        "builddate": "Jun 10 2015 04:34:17",
+        "zend_engine_version": "2.4.0"
+      },
+      "python": {
+        "version": "2.7.5",
+        "builddate": "Apr 9 2015, 11:03:32"
+      },
+      "ruby": {
+        "platform": "x86_64-linux",
+        "version": "2.0.0",
+        "release_date": "2014-11-13",
+        "target": "x86_64-redhat-linux-gnu",
+        "target_cpu": "x86_64",
+        "target_vendor": "redhat",
+        "target_os": "linux",
+        "host": "x86_64-redhat-linux-gnu",
+        "host_cpu": "x86_64",
+        "host_os": "linux-gnu",
+        "host_vendor": "redhat",
+        "bin_dir": "/usr/bin",
+        "ruby_bin": "/usr/bin/ruby",
+        "gems_dir": "/usr/local/share/gems",
+        "gem_bin": "/usr/bin/gem"
+      }
+    },
+    "chef_packages": {
+      "chef": {
+        "version": "12.4.3",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.4.3/lib"
+      },
+      "ohai": {
+        "version": "8.5.1",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.5.1/lib/ohai"
+      }
+    },
+    "cloud_v2": null,
+    "command": {
+      "ps": "ps -ef"
+    },
+    "dmi": {
+      "dmidecode_version": "2.12",
+      "smbios_version": "2.4",
+      "structures": {
+        "count": "364",
+        "size": "17092"
+      },
+      "table_location": "0x000E0010",
+      "bios": {
+        "all_records": [
+          {
+            "record_id": "0x0000",
+            "size": "0",
+            "application_identifier": "BIOS Information",
+            "Vendor": "Phoenix Technologies LTD",
+            "Version": "6.00",
+            "Release Date": "04/14/2014",
+            "Address": "0xEA050",
+            "Runtime Size": "90032 bytes",
+            "ROM Size": "64 kB",
+            "Characteristics": {
+              "ISA is supported": null,
+              "PCI is supported": null,
+              "PC Card (PCMCIA) is supported": null,
+              "PNP is supported": null,
+              "APM is supported": null,
+              "BIOS is upgradeable": null,
+              "BIOS shadowing is allowed": null,
+              "ESCD support is available": null,
+              "Boot from CD is supported": null,
+              "Selectable boot is supported": null,
+              "EDD is supported": null,
+              "Print screen service is supported (int 5h)": null,
+              "8042 keyboard services are supported (int 9h)": null,
+              "Serial services are supported (int 14h)": null,
+              "Printer services are supported (int 17h)": null,
+              "CGA/mono video services are supported (int 10h)": null,
+              "ACPI is supported": null,
+              "Smart battery is supported": null,
+              "BIOS boot specification is supported": null,
+              "Function key-initiated network boot is supported": null,
+              "Targeted content distribution is supported": null
+            },
+            "BIOS Revision": "4.6",
+            "Firmware Revision": "0.0"
+          }
+        ],
+        "vendor": "Phoenix Technologies LTD",
+        "version": "6.00",
+        "release_date": "04/14/2014",
+        "address": "0xEA050",
+        "runtime_size": "90032 bytes",
+        "rom_size": "64 kB",
+        "bios_revision": "4.6",
+        "firmware_revision": "0.0"
+      },
+      "system": {
+        "all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-42 3b df e0 7f 91 ef 45-b6 5d 23 60 1d 65 68 ad",
+            "UUID": "423BDFE0-7F91-EF45-B65D-23601D6568AD",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "manufacturer": "VMware, Inc.",
+        "product_name": "VMware Virtual Platform",
+        "version": "None",
+        "serial_number": "VMware-42 3b df e0 7f 91 ef 45-b6 5d 23 60 1d 65 68 ad",
+        "uuid": "423BDFE0-7F91-EF45-B65D-23601D6568AD",
+        "wake_up_type": "Power Switch",
+        "sku_number": "Not Specified",
+        "family": "Not Specified"
+      },
+      "base_board": {
+        "all_records": [
+          {
+            "record_id": "0x0002",
+            "size": "2",
+            "application_identifier": "Base Board Information",
+            "Manufacturer": "Intel Corporation",
+            "Product Name": "440BX Desktop Reference Platform",
+            "Version": "None",
+            "Serial Number": "None",
+            "Asset Tag": "Not Specified",
+            "Features": "None",
+            "Location In Chassis": "Not Specified",
+            "Chassis Handle": "0x0000",
+            "Type": "Unknown",
+            "Contained Object Handles": "0"
+          }
+        ],
+        "manufacturer": "Intel Corporation",
+        "product_name": "440BX Desktop Reference Platform",
+        "version": "None",
+        "serial_number": "None",
+        "asset_tag": "Not Specified",
+        "features": "None",
+        "location_in_chassis": "Not Specified",
+        "chassis_handle": "0x0000",
+        "type": "Unknown",
+        "contained_object_handles": "0"
+      },
+      "chassis": {
+        "all_records": [
+          {
+            "record_id": "0x0003",
+            "size": "3",
+            "application_identifier": "Chassis Information",
+            "Manufacturer": "No Enclosure",
+            "Type": "Other",
+            "Lock": "Not Present",
+            "Version": "N/A",
+            "Serial Number": "None",
+            "Asset Tag": "No Asset Tag",
+            "Boot-up State": "Safe",
+            "Power Supply State": "Safe",
+            "Thermal State": "Safe",
+            "Security Status": "None",
+            "OEM Information": "0x00001234",
+            "Height": "Unspecified",
+            "Number Of Power Cords": "Unspecified",
+            "Contained Elements": "0"
+          }
+        ],
+        "manufacturer": "No Enclosure",
+        "type": "Other",
+        "lock": "Not Present",
+        "version": "N/A",
+        "serial_number": "None",
+        "asset_tag": "No Asset Tag",
+        "boot_up_state": "Safe",
+        "power_supply_state": "Safe",
+        "thermal_state": "Safe",
+        "security_status": "None",
+        "oem_information": "0x00001234",
+        "height": "Unspecified",
+        "number_of_power_cords": "Unspecified",
+        "contained_elements": "0"
+      },
+      "processor": {
+        "all_records": [
+          {
+            "record_id": "0x0004",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #0",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "GenuineIntel",
+            "ID": "E4 06 03 00 FF FB AB 0F",
+            "Version": "      Intel(R) Xeon(R) CPU E5-4650 v2 @ 2.40GHz",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "2400 MHz",
+            "Status": "Populated, Enabled",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0054",
+            "L2 Cache Handle": "0x0055",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0005",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #1",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "GenuineIntel",
+            "ID": "E4 06 00 00 FF FB AB 0F",
+            "Version": "      Intel(R) Xeon(R) CPU E5-4650 v2 @ 2.40GHz",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "2400 MHz",
+            "Status": "Populated, Enabled",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0056",
+            "L2 Cache Handle": "0x0057",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0006",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #2",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0058",
+            "L2 Cache Handle": "0x0059",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0007",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #3",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x005A",
+            "L2 Cache Handle": "0x005B",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0008",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #4",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x005C",
+            "L2 Cache Handle": "0x005D",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0009",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #5",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x005E",
+            "L2 Cache Handle": "0x005F",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000A",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #6",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0060",
+            "L2 Cache Handle": "0x0061",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000B",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #7",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0062",
+            "L2 Cache Handle": "0x0063",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000C",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #8",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0064",
+            "L2 Cache Handle": "0x0065",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000D",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #9",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0066",
+            "L2 Cache Handle": "0x0067",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000E",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #10",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0068",
+            "L2 Cache Handle": "0x0069",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x000F",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #11",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x006A",
+            "L2 Cache Handle": "0x006B",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0010",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #12",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x006C",
+            "L2 Cache Handle": "0x006D",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0011",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #13",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x006E",
+            "L2 Cache Handle": "0x006F",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0012",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #14",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0070",
+            "L2 Cache Handle": "0x0071",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0013",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #15",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0072",
+            "L2 Cache Handle": "0x0073",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0014",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #16",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0074",
+            "L2 Cache Handle": "0x0075",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0015",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #17",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0076",
+            "L2 Cache Handle": "0x0077",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0016",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #18",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0078",
+            "L2 Cache Handle": "0x0079",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0017",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #19",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x007A",
+            "L2 Cache Handle": "0x007B",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0018",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #20",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x007C",
+            "L2 Cache Handle": "0x007D",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0019",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #21",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x007E",
+            "L2 Cache Handle": "0x007F",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001A",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #22",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0080",
+            "L2 Cache Handle": "0x0081",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001B",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #23",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0082",
+            "L2 Cache Handle": "0x0083",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001C",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #24",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0084",
+            "L2 Cache Handle": "0x0085",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001D",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #25",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0086",
+            "L2 Cache Handle": "0x0087",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001E",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #26",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0088",
+            "L2 Cache Handle": "0x0089",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x001F",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #27",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x008A",
+            "L2 Cache Handle": "0x008B",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0020",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #28",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x008C",
+            "L2 Cache Handle": "0x008D",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0021",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #29",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x008E",
+            "L2 Cache Handle": "0x008F",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0022",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #30",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0090",
+            "L2 Cache Handle": "0x0091",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0023",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #31",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0092",
+            "L2 Cache Handle": "0x0093",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0024",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #32",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0094",
+            "L2 Cache Handle": "0x0095",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0025",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #33",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0096",
+            "L2 Cache Handle": "0x0097",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0026",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #34",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0098",
+            "L2 Cache Handle": "0x0099",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0027",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #35",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x009A",
+            "L2 Cache Handle": "0x009B",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0028",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #36",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x009C",
+            "L2 Cache Handle": "0x009D",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0029",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #37",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x009E",
+            "L2 Cache Handle": "0x009F",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002A",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #38",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00A0",
+            "L2 Cache Handle": "0x00A1",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002B",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #39",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00A2",
+            "L2 Cache Handle": "0x00A3",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002C",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #40",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00A4",
+            "L2 Cache Handle": "0x00A5",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002D",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #41",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00A6",
+            "L2 Cache Handle": "0x00A7",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002E",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #42",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00A8",
+            "L2 Cache Handle": "0x00A9",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x002F",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #43",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00AA",
+            "L2 Cache Handle": "0x00AB",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0030",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #44",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00AC",
+            "L2 Cache Handle": "0x00AD",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0031",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #45",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00AE",
+            "L2 Cache Handle": "0x00AF",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0032",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #46",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00B0",
+            "L2 Cache Handle": "0x00B1",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0033",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #47",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00B2",
+            "L2 Cache Handle": "0x00B3",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0034",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #48",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00B4",
+            "L2 Cache Handle": "0x00B5",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0035",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #49",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00B6",
+            "L2 Cache Handle": "0x00B7",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0036",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #50",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00B8",
+            "L2 Cache Handle": "0x00B9",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0037",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #51",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00BA",
+            "L2 Cache Handle": "0x00BB",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0038",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #52",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00BC",
+            "L2 Cache Handle": "0x00BD",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0039",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #53",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00BE",
+            "L2 Cache Handle": "0x00BF",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003A",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #54",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00C0",
+            "L2 Cache Handle": "0x00C1",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003B",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #55",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00C2",
+            "L2 Cache Handle": "0x00C3",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003C",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #56",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00C4",
+            "L2 Cache Handle": "0x00C5",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003D",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #57",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00C6",
+            "L2 Cache Handle": "0x00C7",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003E",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #58",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00C8",
+            "L2 Cache Handle": "0x00C9",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x003F",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #59",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00CA",
+            "L2 Cache Handle": "0x00CB",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0040",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #60",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00CC",
+            "L2 Cache Handle": "0x00CD",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0041",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #61",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00CE",
+            "L2 Cache Handle": "0x00CF",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0042",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #62",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00D0",
+            "L2 Cache Handle": "0x00D1",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          },
+          {
+            "record_id": "0x0043",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU socket #63",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "000000000000",
+            "ID": "00 00 00 00 00 00 00 00",
+            "Version": "Unknown Processor                               ",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "Unknown",
+            "Status": "Unpopulated",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x00D2",
+            "L2 Cache Handle": "0x00D3",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified"
+          }
+        ],
+        "type": "Central Processor",
+        "family": "Unknown",
+        "voltage": "3.3 V",
+        "external_clock": "Unknown",
+        "max_speed": "30000 MHz",
+        "upgrade": "ZIF Socket",
+        "l3_cache_handle": "Not Provided",
+        "serial_number": "Not Specified",
+        "asset_tag": "Not Specified",
+        "part_number": "Not Specified"
+      },
+      "memory_module": {
+        "all_records": [
+          {
+            "record_id": "0x0045",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #0",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "EDO DIMM",
+            "Installed Size": "8192 MB (Single-bank Connection)",
+            "Enabled Size": "8192 MB (Single-bank Connection)",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0046",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #1",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0047",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #2",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0048",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #3",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0049",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #4",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004A",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #5",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004B",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #6",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004C",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #7",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004D",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #8",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004E",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #9",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x004F",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #10",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0050",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #11",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0051",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #12",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0052",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #13",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0053",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #14",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          }
+        ],
+        "bank_connections": "None",
+        "current_speed": "Unknown",
+        "error_status": "OK"
+      },
+      "oem_strings": {
+        "all_records": [
+          {
+            "record_id": "0x00E0",
+            "size": "11",
+            "application_identifier": "OEM Strings",
+            "String 1": "[MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7]",
+            "String 2": "Welcome to the Virtual Machine"
+          }
+        ],
+        "string_1": "[MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7]",
+        "string_2": "Welcome to the Virtual Machine"
+      }
+    },
+    "hostname": "no1010042201038",
+    "machinename": "no1010042201038",
+    "fqdn": "no1010042201038",
+    "domain": null,
+    "init_package": "systemd",
+    "keys": {
+      "ssh": {
+        "host_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDsVPCM45kn/SNFJrjZTqgtYeilBiPbRKzp8wcQHS4Xi5nRJCHr84FC/OF+WGwtBA6knYdAkWtuaWway1XqoLoLllyJ9s1OVWGsKzPkFL2uAPgPfMBlNb0AxHChHg70h0pMbk9Sne1GaAk+V19LYPU3F1FK72h0nQrJXf0NxGBzhwjh1Ukma6eUuHKC20EqKimBQKlhZAmofuLfRq+O8P1FbH/d8oRnBLYImNAxQwxrdxacq3tl8jkmhK1dbeFXkPEfVGD3L50TtdX3QMm5rP8cfeuR65gbDV6192jeCzfBltIEzPheRLKwrJiyALqZVNNM4juAPpjSoeT+L8hjDnRN",
+        "host_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE9blLBcxhWAvZuc89HfKec6cDkkP96kySJJs3IvfVrDTZpvdnTGkoecUUxtJHAHtFPeF17Dyt8LX1NszMwWZA0=",
+        "host_ecdsa_type": "ecdsa-sha2-nistp256",
+        "host_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIGvtU8OwCsGdr9XOdIte+swanY2xZ2RiLA2l2a2RkOxn"
+      }
+    },
+    "block_device": {
+      "fd0": {
+        "size": "0",
+        "removable": "1",
+        "rotational": "1"
+      },
+      "sda": {
+        "size": "209715200",
+        "removable": "0",
+        "model": "Virtual disk",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "VMware",
+        "rotational": "1"
+      },
+      "sr0": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "VMware SATA CD00",
+        "rev": "1.00",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "NECVMWar",
+        "rotational": "1"
+      },
+      "dm-0": {
+        "size": "32768000",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-1": {
+        "size": "20512768",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-2": {
+        "size": "126550016",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-3": {
+        "size": "16384000",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-4": {
+        "size": "12320768",
+        "removable": "0",
+        "rotational": "1"
+      }
+    },
+    "ohai_time": 1456078962.7510085,
+    "etc": {
+      "passwd": {
+        "root": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 0,
+          "shell": "/bin/bash",
+          "gecos": "root"
+        },
+        "bin": {
+          "dir": "/bin",
+          "gid": 1,
+          "uid": 1,
+          "shell": "/sbin/nologin",
+          "gecos": "bin"
+        },
+        "daemon": {
+          "dir": "/sbin",
+          "gid": 2,
+          "uid": 2,
+          "shell": "/sbin/nologin",
+          "gecos": "daemon"
+        },
+        "adm": {
+          "dir": "/var/adm",
+          "gid": 4,
+          "uid": 3,
+          "shell": "/sbin/nologin",
+          "gecos": "adm"
+        },
+        "lp": {
+          "dir": "/var/spool/lpd",
+          "gid": 7,
+          "uid": 4,
+          "shell": "/sbin/nologin",
+          "gecos": "lp"
+        },
+        "sync": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 5,
+          "shell": "/bin/sync",
+          "gecos": "sync"
+        },
+        "shutdown": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 6,
+          "shell": "/sbin/shutdown",
+          "gecos": "shutdown"
+        },
+        "halt": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 7,
+          "shell": "/sbin/halt",
+          "gecos": "halt"
+        },
+        "mail": {
+          "dir": "/var/spool/mail",
+          "gid": 12,
+          "uid": 8,
+          "shell": "/sbin/nologin",
+          "gecos": "mail"
+        },
+        "operator": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 11,
+          "shell": "/sbin/nologin",
+          "gecos": "operator"
+        },
+        "games": {
+          "dir": "/usr/games",
+          "gid": 100,
+          "uid": 12,
+          "shell": "/sbin/nologin",
+          "gecos": "games"
+        },
+        "ftp": {
+          "dir": "/var/ftp",
+          "gid": 50,
+          "uid": 14,
+          "shell": "/sbin/nologin",
+          "gecos": "FTP User"
+        },
+        "nobody": {
+          "dir": "/",
+          "gid": 99,
+          "uid": 99,
+          "shell": "/sbin/nologin",
+          "gecos": "Nobody"
+        },
+        "dbus": {
+          "dir": "/",
+          "gid": 81,
+          "uid": 81,
+          "shell": "/sbin/nologin",
+          "gecos": "System message bus"
+        },
+        "polkitd": {
+          "dir": "/",
+          "gid": 999,
+          "uid": 999,
+          "shell": "/sbin/nologin",
+          "gecos": "User for polkitd"
+        },
+        "saslauth": {
+          "dir": "/run/saslauthd",
+          "gid": 76,
+          "uid": 998,
+          "shell": "/sbin/nologin",
+          "gecos": "\"Saslauthd user\""
+        },
+        "mailnull": {
+          "dir": "/var/spool/mqueue",
+          "gid": 47,
+          "uid": 47,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "smmsp": {
+          "dir": "/var/spool/mqueue",
+          "gid": 51,
+          "uid": 51,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "libstoragemgmt": {
+          "dir": "/var/run/lsm",
+          "gid": 996,
+          "uid": 997,
+          "shell": "/sbin/nologin",
+          "gecos": "daemon account for libstoragemgmt"
+        },
+        "avahi": {
+          "dir": "/var/run/avahi-daemon",
+          "gid": 70,
+          "uid": 70,
+          "shell": "/sbin/nologin",
+          "gecos": "Avahi mDNS/DNS-SD Stack"
+        },
+        "rpc": {
+          "dir": "/var/lib/rpcbind",
+          "gid": 32,
+          "uid": 32,
+          "shell": "/sbin/nologin",
+          "gecos": "Rpcbind Daemon"
+        },
+        "usbmuxd": {
+          "dir": "/",
+          "gid": 113,
+          "uid": 113,
+          "shell": "/sbin/nologin",
+          "gecos": "usbmuxd user"
+        },
+        "nscd": {
+          "dir": "/",
+          "gid": 28,
+          "uid": 28,
+          "shell": "/sbin/nologin",
+          "gecos": "NSCD Daemon"
+        },
+        "ntp": {
+          "dir": "/etc/ntp",
+          "gid": 38,
+          "uid": 38,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "abrt": {
+          "dir": "/etc/abrt",
+          "gid": 173,
+          "uid": 173,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "apache": {
+          "dir": "/usr/share/httpd",
+          "gid": 48,
+          "uid": 48,
+          "shell": "/sbin/nologin",
+          "gecos": "Apache"
+        },
+        "unbound": {
+          "dir": "/etc/unbound",
+          "gid": 995,
+          "uid": 996,
+          "shell": "/sbin/nologin",
+          "gecos": "Unbound DNS resolver"
+        },
+        "rpcuser": {
+          "dir": "/var/lib/nfs",
+          "gid": 29,
+          "uid": 29,
+          "shell": "/sbin/nologin",
+          "gecos": "RPC Service User"
+        },
+        "nfsnobody": {
+          "dir": "/var/lib/nfs",
+          "gid": 65534,
+          "uid": 65534,
+          "shell": "/sbin/nologin",
+          "gecos": "Anonymous NFS User"
+        },
+        "pcp": {
+          "dir": "/var/lib/pcp",
+          "gid": 994,
+          "uid": 995,
+          "shell": "/sbin/nologin",
+          "gecos": "Performance Co-Pilot"
+        },
+        "colord": {
+          "dir": "/var/lib/colord",
+          "gid": 993,
+          "uid": 994,
+          "shell": "/sbin/nologin",
+          "gecos": "User for colord"
+        },
+        "postfix": {
+          "dir": "/var/spool/postfix",
+          "gid": 89,
+          "uid": 89,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "nslcd": {
+          "dir": "/",
+          "gid": 55,
+          "uid": 65,
+          "shell": "/sbin/nologin",
+          "gecos": "LDAP Client User"
+        },
+        "sshd": {
+          "dir": "/var/empty/sshd",
+          "gid": 74,
+          "uid": 74,
+          "shell": "/sbin/nologin",
+          "gecos": "Privilege-separated SSH"
+        },
+        "memcached": {
+          "dir": "/run/memcached",
+          "gid": 991,
+          "uid": 993,
+          "shell": "/sbin/nologin",
+          "gecos": "Memcached daemon"
+        },
+        "chrony": {
+          "dir": "/var/lib/chrony",
+          "gid": 990,
+          "uid": 992,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "oprofile": {
+          "dir": "/var/lib/oprofile",
+          "gid": 16,
+          "uid": 16,
+          "shell": "/sbin/nologin",
+          "gecos": "Special user account to be used by OProfile"
+        },
+        "tcpdump": {
+          "dir": "/",
+          "gid": 72,
+          "uid": 72,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "itcloud": {
+          "dir": "/home/itcloud",
+          "gid": 1000,
+          "uid": 1000,
+          "shell": "/bin/bash",
+          "gecos": "itcloud"
+        },
+        "tss": {
+          "dir": "/dev/null",
+          "gid": 59,
+          "uid": 59,
+          "shell": "/sbin/nologin",
+          "gecos": "Account used by the trousers package to sandbox the tcsd daemon"
+        },
+        "sssd": {
+          "dir": "/",
+          "gid": 989,
+          "uid": 991,
+          "shell": "/sbin/nologin",
+          "gecos": "User for sssd"
+        }
+      },
+      "group": {
+        "root": {
+          "gid": 0,
+          "members": null
+        },
+        "bin": {
+          "gid": 1,
+          "members": null
+        },
+        "daemon": {
+          "gid": 2,
+          "members": null
+        },
+        "sys": {
+          "gid": 3,
+          "members": null
+        },
+        "adm": {
+          "gid": 4,
+          "members": null
+        },
+        "tty": {
+          "gid": 5,
+          "members": null
+        },
+        "disk": {
+          "gid": 6,
+          "members": null
+        },
+        "lp": {
+          "gid": 7,
+          "members": null
+        },
+        "mem": {
+          "gid": 8,
+          "members": null
+        },
+        "kmem": {
+          "gid": 9,
+          "members": null
+        },
+        "wheel": {
+          "gid": 10,
+          "members": null
+        },
+        "cdrom": {
+          "gid": 11,
+          "members": null
+        },
+        "mail": {
+          "gid": 12,
+          "members": [
+            "postfix"
+          ]
+        },
+        "man": {
+          "gid": 15,
+          "members": null
+        },
+        "dialout": {
+          "gid": 18,
+          "members": null
+        },
+        "floppy": {
+          "gid": 19,
+          "members": null
+        },
+        "games": {
+          "gid": 20,
+          "members": null
+        },
+        "tape": {
+          "gid": 30,
+          "members": null
+        },
+        "video": {
+          "gid": 39,
+          "members": null
+        },
+        "ftp": {
+          "gid": 50,
+          "members": null
+        },
+        "lock": {
+          "gid": 54,
+          "members": null
+        },
+        "audio": {
+          "gid": 63,
+          "members": null
+        },
+        "nobody": {
+          "gid": 99,
+          "members": null
+        },
+        "users": {
+          "gid": 100,
+          "members": null
+        },
+        "utmp": {
+          "gid": 22,
+          "members": null
+        },
+        "utempter": {
+          "gid": 35,
+          "members": null
+        },
+        "systemd-journal": {
+          "gid": 190,
+          "members": null
+        },
+        "dbus": {
+          "gid": 81,
+          "members": null
+        },
+        "polkitd": {
+          "gid": 999,
+          "members": null
+        },
+        "cgred": {
+          "gid": 998,
+          "members": null
+        },
+        "ssh_keys": {
+          "gid": 997,
+          "members": null
+        },
+        "saslauth": {
+          "gid": 76,
+          "members": null
+        },
+        "mailnull": {
+          "gid": 47,
+          "members": null
+        },
+        "smmsp": {
+          "gid": 51,
+          "members": null
+        },
+        "libstoragemgmt": {
+          "gid": 996,
+          "members": null
+        },
+        "avahi": {
+          "gid": 70,
+          "members": null
+        },
+        "rpc": {
+          "gid": 32,
+          "members": null
+        },
+        "usbmuxd": {
+          "gid": 113,
+          "members": null
+        },
+        "nscd": {
+          "gid": 28,
+          "members": null
+        },
+        "ntp": {
+          "gid": 38,
+          "members": null
+        },
+        "abrt": {
+          "gid": 173,
+          "members": null
+        },
+        "apache": {
+          "gid": 48,
+          "members": null
+        },
+        "unbound": {
+          "gid": 995,
+          "members": null
+        },
+        "stapusr": {
+          "gid": 156,
+          "members": null
+        },
+        "stapsys": {
+          "gid": 157,
+          "members": null
+        },
+        "stapdev": {
+          "gid": 158,
+          "members": null
+        },
+        "rpcuser": {
+          "gid": 29,
+          "members": null
+        },
+        "nfsnobody": {
+          "gid": 65534,
+          "members": null
+        },
+        "pcp": {
+          "gid": 994,
+          "members": null
+        },
+        "colord": {
+          "gid": 993,
+          "members": null
+        },
+        "postdrop": {
+          "gid": 90,
+          "members": null
+        },
+        "postfix": {
+          "gid": 89,
+          "members": null
+        },
+        "wbpriv": {
+          "gid": 88,
+          "members": null
+        },
+        "wireshark": {
+          "gid": 992,
+          "members": null
+        },
+        "ldap": {
+          "gid": 55,
+          "members": null
+        },
+        "sshd": {
+          "gid": 74,
+          "members": null
+        },
+        "slocate": {
+          "gid": 21,
+          "members": null
+        },
+        "memcached": {
+          "gid": 991,
+          "members": null
+        },
+        "chrony": {
+          "gid": 990,
+          "members": null
+        },
+        "oprofile": {
+          "gid": 16,
+          "members": null
+        },
+        "screen": {
+          "gid": 84,
+          "members": null
+        },
+        "tcpdump": {
+          "gid": 72,
+          "members": null
+        },
+        "itcloud": {
+          "gid": 1000,
+          "members": [
+            "itcloud"
+          ]
+        },
+        "tss": {
+          "gid": 59,
+          "members": null
+        },
+        "sssd": {
+          "gid": 989,
+          "members": null
+        }
+      }
+    },
+    "current_user": "root",
+    "root_group": "root",
+    "recipes": null,
+    "expanded_run_list": null,
+    "roles": null
+  },
+  "run_list": [
+    "recipe[apache2]",
+    "recipe[apache2::mod_php5]",
+    "recipe[apache2::mod_ssl]",
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[php]",
+    "recipe[php::module_mysql]",
+    "recipe[yum-mysql-community::mysql57]",
+    "recipe[yum-mysql-community::connectors]"
+  ]
+}

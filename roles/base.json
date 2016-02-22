@@ -1,0 +1,30 @@
+{
+  "name": "base",
+  "description": "\"Base role applied to all nodes.\"",
+  "run_list": [
+   "recipe[users::sysadmins]", 
+    "recipe[7-zip]",
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[chef-sugar]",
+    "recipe[chef_handler]",
+    "recipe[dmg]",
+    "recipe[git]",
+    "recipe[iis]",
+    "recipe[rbac]",
+    "recipe[xml]",
+    "recipe[yum-epel]",
+    "recipe[yum]",
+    "recipe[smf]",
+    "recipe[yum-mysql-community::mysql57]",
+    "recipe[yum::dnf_yum_compat]",
+    "recipe[xml::ruby]",
+    "recipe[yum-mysql-community::mysql56]",
+    "recipe[windows]",
+    "recipe[yum-mysql-community::connectors]",
+    "recipe[users]",
+    "recipe[sudo]",
+    "recipe[vim]",
+    "recipe[yum-mysql-community::mysql55]"
+  ]
+}
