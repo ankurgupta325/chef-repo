@@ -31,3 +31,8 @@ php_pear_channel 'pecl.php.net' do
 end
 
 include_recipe 'php::ini'
+
+depends "apache2"
+apache_site "default" do
+  enable true
+  end
