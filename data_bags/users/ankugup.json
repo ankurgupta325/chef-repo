@@ -1,0 +1,7 @@
+{
+    "id": "ankugup",
+        "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+KvjsFItPA8j1BPb9trAkwfIeVrgN1EW76DrDY238F6rrhacEF7xt+ZLeONkw8mF1CP/jzPzd0D+K7X2G+BIuibf1IMZM7oMUxkzFijyMWvpPFPYFNB6h9tXEub2e4tN7BzpUeY9J2I38oewbpKsn2aBH12bbA4nKLTYwP3nCmK/fcLMOD8Sy89Mw2pe4PhqRxj6G2UMICfbqNTXOV3rsQBrlplpVKXIdvYROJ5WeKeiR8JWmq/z7cQMrYJgIH/V3mizLRurngw7gGbQkkhmNTabAJwGze9coOPJi4vITdFc2E9SZA9dI5IuANonMiA1AYfEi/P1TGgjZbnAWXKi4Vv5oxAEhpE+Dto1bLX5riVKVwr5GleRCv7zo7+yvepM9rOE3T0yazw3sG/5M7zcKMT43AUPYtoQRb3ZZufxAlyP3S1lnjxl8XzrnEpfgcMWtxPQ4VKSQlLFynxQU5ZDPoKA+mFG+OzCxd+mV6mrwIqhOP8gWpBoZO6GBOh5OCkCBfw98cr0wOi2IOstOFLkcSPmKqiCGWDjrZDl0vcPue6U0UiAe+L3JuoVIzcXm12dFff5z8iIuGVXMzrNxAiu7Uz11AeyAgQQGdv8MihGYBzEW0wFrOMt0cf4c9qs3P4Hy0gslBF+dd0kkpvvza0ajDXAzE9qKgtitWe+R3HQDmw== ankurgupta325@gmail.com",
+	    "groups": [ "sysadmin", "dba", "devops" ],
+	        "uid": 2001,
+		    "shell": "/bin/bash"
+		    }
