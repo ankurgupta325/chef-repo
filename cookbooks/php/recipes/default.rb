@@ -32,7 +32,6 @@ end
 
 include_recipe 'php::ini'
 
-depends "apache2"
 apache_site "default" do
   enable true
   end
