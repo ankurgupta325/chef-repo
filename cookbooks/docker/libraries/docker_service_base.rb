@@ -4,14 +4,22 @@ module DockerCookbook
     # Helper Methods
     ################
     require 'docker'
+<<<<<<< HEAD
     require_relative 'helpers_service'
+=======
+    require 'helpers_service'
+>>>>>>> chef-vendor-docker
     include DockerHelpers::Service
 
     #####################
     # resource properties
     #####################
 
+<<<<<<< HEAD
     resource_name :docker_service_base
+=======
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     # register with the resource resolution system
     provides :docker_service_manager
@@ -55,9 +63,15 @@ module DockerCookbook
     property :storage_driver, ArrayType
     property :selinux_enabled, [Boolean, nil]
     property :storage_opts, ArrayType
+<<<<<<< HEAD
     property :default_ulimit, ArrayType
     property :userland_proxy, [Boolean, nil]
     property :disable_legacy_registry, [Boolean, nil]
+=======
+    property :tls, [Boolean, nil]
+    property :default_ulimit, ArrayType
+    property :userland_proxy, [Boolean, nil]
+>>>>>>> chef-vendor-docker
 
     # environment variables to set before running daemon
     property :http_proxy, [String, nil]
@@ -68,6 +82,7 @@ module DockerCookbook
     # logging
     property :logfile, String, default: '/var/log/docker.log'
 
+<<<<<<< HEAD
     allowed_actions :start, :stop, :restart
 
     alias label labels
@@ -76,5 +91,20 @@ module DockerCookbook
     alias tlskey tls_server_key
     alias tlsverify tls_verify
     alias run_group group
+=======
+    alias_method :label, :labels
+    alias_method :tlscacert, :tls_ca_cert
+    alias_method :tlscert, :tls_server_cert
+    alias_method :tlskey, :tls_server_key
+    alias_method :tlsverify, :tls_verify
+  end
+end
+
+# Declare a module for subresoures' providers to sit in (backcompat)
+class Chef
+  class Provider
+    module DockerServiceBase
+    end
+>>>>>>> chef-vendor-docker
   end
 end

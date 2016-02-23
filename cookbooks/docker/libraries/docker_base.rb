@@ -1,7 +1,12 @@
 module DockerCookbook
   class DockerBase < ChefCompat::Resource
+<<<<<<< HEAD
     require_relative 'helpers_auth'
     require_relative 'helpers_base'
+=======
+    require 'helpers_auth'
+    require 'helpers_base'
+>>>>>>> chef-vendor-docker
 
     include DockerHelpers::Base
 
@@ -12,7 +17,11 @@ module DockerCookbook
     class UnorderedArray < Array
       def ==(other)
         # If I (desired env) am a subset of the current env, let == return true
+<<<<<<< HEAD
         other.is_a?(Array) && all? { |val| other.include?(val) }
+=======
+        other.is_a?(Array) && self.all? { |val| other.include?(val) }
+>>>>>>> chef-vendor-docker
       end
     end
 
@@ -24,7 +33,11 @@ module DockerCookbook
 
     class PartialHash < Hash
       def ==(other)
+<<<<<<< HEAD
         other.is_a?(Hash) && all? { |key, val| other.key?(key) && other[key] == val }
+=======
+        other.is_a?(Hash) && self.all? { |key, val| other.key?(key) && other[key] == val }
+>>>>>>> chef-vendor-docker
       end
     end
 

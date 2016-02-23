@@ -3,7 +3,11 @@ module DockerCookbook
     #####################
     # Resource properties
     #####################
+<<<<<<< HEAD
     resource_name :docker_installation_script
+=======
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     provides :docker_installation, os: 'linux'
 

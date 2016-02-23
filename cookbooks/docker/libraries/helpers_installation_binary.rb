@@ -46,7 +46,11 @@ module DockerCookbook
            node['platform_family'] == 'debian' && node['platform_version'].to_i <= 7
           '1.6.2'
         else
+<<<<<<< HEAD
           '1.10.0'
+=======
+          '1.8.2'
+>>>>>>> chef-vendor-docker
         end
       end
     end

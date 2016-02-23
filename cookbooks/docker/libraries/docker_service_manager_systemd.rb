@@ -1,6 +1,10 @@
 module DockerCookbook
   class DockerServiceManagerSystemd < DockerServiceBase
+<<<<<<< HEAD
     resource_name :docker_service_manager_systemd
+=======
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     provides :docker_service_manager, platform: 'fedora'
 
@@ -16,6 +20,7 @@ module DockerCookbook
       node['platform_version'].to_f >= 15.04
     end
 
+<<<<<<< HEAD
     property :service_timeout, Integer, default: 20
 
     def libexec_dir
@@ -25,6 +30,11 @@ module DockerCookbook
 
     action :start do
       directory libexec_dir do
+=======
+    action :start do
+      # Needed for Debian / Ubuntu
+      directory '/usr/libexec' do
+>>>>>>> chef-vendor-docker
         owner 'root'
         group 'root'
         mode '0755'
@@ -33,26 +43,39 @@ module DockerCookbook
 
       # this script is called by the main systemd unit file, and
       # spins around until the service is actually up and running.
+<<<<<<< HEAD
       template "#{libexec_dir}/#{docker_name}-wait-ready" do
+=======
+      template "/usr/libexec/#{docker_name}-wait-ready" do
+>>>>>>> chef-vendor-docker
         source 'systemd/docker-wait-ready.erb'
         owner 'root'
         group 'root'
         mode '0755'
+<<<<<<< HEAD
         variables(
           docker_cmd: docker_cmd,
           libexec_dir: libexec_dir,
           service_timeout: service_timeout
         )
+=======
+        variables(docker_cmd: docker_cmd)
+>>>>>>> chef-vendor-docker
         cookbook 'docker'
         action :create
       end
 
+<<<<<<< HEAD
       # stock systemd unit file
+=======
+      # this is the main systemd unit file
+>>>>>>> chef-vendor-docker
       template "/lib/systemd/system/#{docker_name}.service" do
         source 'systemd/docker.service.erb'
         owner 'root'
         group 'root'
         mode '0644'
+<<<<<<< HEAD
         variables(docker_name: docker_name)
         cookbook 'docker'
         action :create
@@ -102,6 +125,21 @@ module DockerCookbook
         cookbook 'docker'
         notifies :run, 'execute[systemctl daemon-reload]', :immediately
         notifies :restart, new_resource
+=======
+        variables(
+          config: new_resource,
+          docker_name: docker_name,
+          docker_daemon_cmd: docker_daemon_cmd
+        )
+        cookbook 'docker'
+        notifies :run, 'execute[systemctl daemon-reload]', :immediately
+        notifies :restart, new_resource unless ::File.exist? "/etc/#{docker_name}-firstconverge"
+        notifies :restart, new_resource if auto_restart
+        action :create
+      end
+
+      file "/etc/#{docker_name}-firstconverge" do
+>>>>>>> chef-vendor-docker
         action :create
       end
 
@@ -111,6 +149,20 @@ module DockerCookbook
         action :nothing
       end
 
+<<<<<<< HEAD
+=======
+      # tmpfiles.d config so the service survives reboot
+      template "/usr/lib/tmpfiles.d/#{docker_name}.conf" do
+        source 'systemd/tmpfiles.d.conf.erb'
+        owner 'root'
+        group 'root'
+        mode '0644'
+        variables(config: new_resource)
+        cookbook 'docker'
+        action :create
+      end
+
+>>>>>>> chef-vendor-docker
       # service management resource
       service docker_name do
         provider Chef::Provider::Service::Systemd

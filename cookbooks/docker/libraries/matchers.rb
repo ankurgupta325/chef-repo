@@ -2,8 +2,11 @@ if defined?(ChefSpec)
   #####################
   # docker_installation
   #####################
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_installation
 
+=======
+>>>>>>> chef-vendor-docker
   def create_docker_installation(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_installation, :create, resource_name)
   end
@@ -39,8 +42,11 @@ if defined?(ChefSpec)
   ################
   # docker_service
   ################
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_service
 
+=======
+>>>>>>> chef-vendor-docker
   def create_docker_service(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_service, :create, resource_name)
   end
@@ -64,7 +70,10 @@ if defined?(ChefSpec)
   ########################
   # docker_service_manager
   ########################
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_service_manager
+=======
+>>>>>>> chef-vendor-docker
 
   def create_docker_service_manager(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_service_manager, :create, resource_name)
@@ -169,8 +178,11 @@ if defined?(ChefSpec)
   ##############
   # docker_image
   ##############
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_image
 
+=======
+>>>>>>> chef-vendor-docker
   def build_docker_image(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_image, :build, resource_name)
   end
@@ -206,7 +218,10 @@ if defined?(ChefSpec)
   ##################
   # docker_container
   ##################
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_container
+=======
+>>>>>>> chef-vendor-docker
 
   def create_docker_container(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_container, :create, resource_name)
@@ -271,7 +286,10 @@ if defined?(ChefSpec)
   ##############
   # docker_tag
   ##############
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_tag
+=======
+>>>>>>> chef-vendor-docker
 
   def tag_docker_tag(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_tag, :tag, resource_name)
@@ -280,12 +298,16 @@ if defined?(ChefSpec)
   #################
   # docker_registry
   #################
+<<<<<<< HEAD
   ChefSpec.define_matcher :docker_registry
+=======
+>>>>>>> chef-vendor-docker
 
   def login_docker_registry(resource_name)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_registry, :login, resource_name)
   end
 
+<<<<<<< HEAD
   ################
   # docker_network
   ################
@@ -320,4 +342,6 @@ if defined?(ChefSpec)
     ChefSpec::Matchers::ResourceMatcher.new(:docker_volume, :remove, resource_name)
   end
 
+=======
+>>>>>>> chef-vendor-docker
 end

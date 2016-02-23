@@ -16,11 +16,14 @@ module DockerCookbook
         false
       end
 
+<<<<<<< HEAD
       def wheezy?
         return true if node['platform'] == 'debian' && node['platform_version'].to_i == 7
         false
       end
 
+=======
+>>>>>>> chef-vendor-docker
       def jesse?
         return true if node['platform'] == 'debian' && node['platform_version'].to_i == 8
         false
@@ -57,7 +60,10 @@ module DockerCookbook
         return "#{v}-1.el7.centos" if el7?
         return "#{v}-1.el6" if amazon?
         return "#{v}-1.fc21" if fc21?
+<<<<<<< HEAD
         return "#{v}-0~wheezy" if wheezy?
+=======
+>>>>>>> chef-vendor-docker
         return "#{v}-0~jessie" if jesse?
         return "#{v}-0~precise" if precise?
         return "#{v}-0~trusty" if trusty?
@@ -69,8 +75,12 @@ module DockerCookbook
       def default_docker_version
         return '1.7.1' if el6?
         return '1.7.1' if amazon?
+<<<<<<< HEAD
         return '1.9.1' if fc21?
         '1.10.0'
+=======
+        '1.8.3'
+>>>>>>> chef-vendor-docker
       end
 
       def docker_bin

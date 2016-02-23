@@ -1,7 +1,11 @@
 module DockerCookbook
   class DockerInstallationBinary < DockerBase
+<<<<<<< HEAD
     require_relative 'helpers_installation_binary'
 
+=======
+    require 'helpers_installation_binary'
+>>>>>>> chef-vendor-docker
     include DockerHelpers::InstallationBinary
 
     #####################

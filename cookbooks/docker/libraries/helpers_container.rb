@@ -2,6 +2,7 @@ module DockerCookbook
   module DockerHelpers
     module Container
       def coerce_links(v)
+<<<<<<< HEAD
         case v
         when DockerBase::UnorderedArray, nil
           v
@@ -9,6 +10,14 @@ module DockerCookbook
           return nil if v.empty?
           # Parse docker input of /source:/container_name/dest into source:dest
           DockerBase::UnorderedArray.new(Array(v)).map! do |link|
+=======
+        v = Array(v)
+        if v.empty?
+          nil
+        else
+          # Parse docker input of /source:/container_name/dest into source:dest
+          v.map do |link|
+>>>>>>> chef-vendor-docker
             if link =~ %r{^/(?<source>.+):/#{name}/(?<dest>.+)}
               link = "#{Regexp.last_match[:source]}:#{Regexp.last_match[:dest]}"
             end
@@ -30,20 +39,35 @@ module DockerCookbook
       end
 
       def coerce_ulimits(v)
+<<<<<<< HEAD
         return v if v.nil?
         Array(v).map do |u|
           u = "#{u['Name']}=#{u['Soft']}:#{u['Hard']}" if u.is_a?(Hash)
           u
+=======
+        if v.nil?
+          v
+        else
+          Array(v).map do |u|
+            u = "#{u['Name']}=#{u['Soft']}:#{u['Hard']}" if u.is_a?(Hash)
+            u
+          end
+>>>>>>> chef-vendor-docker
         end
       end
 
       def coerce_volumes(v)
         case v
+<<<<<<< HEAD
         when DockerBase::PartialHash, nil
+=======
+        when nil, DockerBase::PartialHash
+>>>>>>> chef-vendor-docker
           v
         when Hash
           DockerBase::PartialHash[v]
         else
+<<<<<<< HEAD
           b = []
           v = Array(v).to_a # in case v.is_A?(Chef::Node::ImmutableArray)
           v.delete_if do |x|
@@ -54,6 +78,9 @@ module DockerCookbook
           volumes_binds b
           return DockerBase::PartialHash.new if v.empty?
           v.each_with_object(DockerBase::PartialHash.new) { |volume, h| h[volume] = {} }
+=======
+          Array(v).each_with_object(DockerBase::PartialHash.new) { |volume, h| h[volume] = {} }
+>>>>>>> chef-vendor-docker
         end
       end
 
@@ -195,6 +222,17 @@ module DockerCookbook
         "#{repo}:#{tag}"
       end
 
+<<<<<<< HEAD
+=======
+      def to_snake_case(name)
+        # ExposedPorts -> _exposed_ports
+        name = name.gsub(/[A-Z]/) { |x| "_#{x.downcase}" }
+        # _exposed_ports -> exposed_ports
+        name = name[1..-1] if name.start_with?('_')
+        name
+      end
+
+>>>>>>> chef-vendor-docker
       def to_shellwords(command)
         return nil if command.nil?
         Shellwords.shellwords(command)

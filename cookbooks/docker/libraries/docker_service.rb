@@ -1,8 +1,14 @@
 module DockerCookbook
+<<<<<<< HEAD
   require_relative 'docker_service_base'
 
   class DockerService < DockerServiceBase
     resource_name :docker_service
+=======
+  require 'docker_service_base'
+  class DockerService < DockerServiceBase
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     # register with the resource resolution system
     provides :docker_service
@@ -11,14 +17,18 @@ module DockerCookbook
     property :install_method, %w(binary script package none auto), default: 'auto', desired_state: false
     property :service_manager, %w(execute sysvinit upstart systemd auto), default: 'auto', desired_state: false
 
+<<<<<<< HEAD
     # docker_installation_script
     property :repo, desired_state: false
     property :script_url, String, desired_state: false
 
+=======
+>>>>>>> chef-vendor-docker
     # docker_installation_binary
     property :checksum, String, desired_state: false
     property :docker_bin, String, desired_state: false
     property :source, String, desired_state: false
+<<<<<<< HEAD
 
     # docker_installation_package
     property :package_version, String, desired_state: false
@@ -26,10 +36,22 @@ module DockerCookbook
     # binary and package
     property :version, String, desired_state: false
     property :package_options, [String, nil], desired_state: false
+=======
+    property :version, String, desired_state: false
+
+    # docker_installation_script
+    property :repo, desired_state: false
+    property :script_url, String, desired_state: false
+
+    # docker_installation_package
+    property :package_version, String, desired_state: false
+    property :version, String, desired_state: false
+>>>>>>> chef-vendor-docker
 
     ################
     # Helper Methods
     ################
+<<<<<<< HEAD
     def validate_install_method
       if property_is_set?(:version) &&
          install_method != 'binary' &&
@@ -37,6 +59,8 @@ module DockerCookbook
         raise Chef::Exceptions::ValidationFailed, 'Version property only supported for binary and package installation methods'
       end
     end
+=======
+>>>>>>> chef-vendor-docker
 
     def copy_properties_to(to, *properties)
       properties = self.class.properties.keys if properties.empty?
@@ -91,8 +115,11 @@ module DockerCookbook
     #########
 
     action :create do
+<<<<<<< HEAD
       validate_install_method
 
+=======
+>>>>>>> chef-vendor-docker
       installation do
         action :create
         notifies :restart, new_resource

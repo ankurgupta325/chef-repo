@@ -68,7 +68,12 @@ module DockerCookbook
           creds = node.run_state['docker_auth'] && node.run_state['docker_auth'][registry_host] || (node.run_state['docker_auth'] ||= {})['index.docker.io']
 
           original_image = Docker::Image.get(image_identifier, {}, connection) if Docker::Image.exist?(image_identifier, {}, connection)
+<<<<<<< HEAD
           new_image = Docker::Image.create({ 'fromImage' => image_identifier }, creds, connection)
+=======
+          Docker::Image.create({ 'fromImage' => image_identifier }, creds, connection)
+          new_image = Docker::Image.get(image_identifier, {}, connection) if Docker::Image.exist?(image_identifier, {}, connection)
+>>>>>>> chef-vendor-docker
 
           !(original_image && original_image.id.start_with?(new_image.id))
         end

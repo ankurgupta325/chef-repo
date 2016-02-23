@@ -1,6 +1,10 @@
 module DockerCookbook
   class DockerServiceManagerExecute < DockerServiceBase
+<<<<<<< HEAD
     resource_name :docker_service_manager_execute
+=======
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     provides :docker_service_manager, os: 'linux'
 
@@ -38,11 +42,18 @@ module DockerCookbook
         code <<-EOF
             timeout=0
             while [ $timeout -lt 20 ];  do
+<<<<<<< HEAD
+=======
+              ((timeout++))
+>>>>>>> chef-vendor-docker
               #{docker_cmd} ps | head -n 1 | grep ^CONTAINER
                 if [ $? -eq 0 ]; then
                   break
                 fi
+<<<<<<< HEAD
               ((timeout++))
+=======
+>>>>>>> chef-vendor-docker
                sleep 1
             done
             [[ $timeout -eq 20 ]] && exit 1

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 v2.5.5
 --------------------
 - Fixing up various default: nil warnings
@@ -158,6 +159,8 @@ v2.4.1
 - #598 - systemd manager return value check for docker-wait-ready
 - #600 - execute manager last iteration check fix.
 
+=======
+>>>>>>> chef-vendor-docker
 v2.4.0
 --------------------
 - Adding support for pid_mode and ipc_mode to docker_container

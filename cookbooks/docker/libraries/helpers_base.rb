@@ -3,6 +3,7 @@ module DockerCookbook
     module Base
       require 'shellwords'
 
+<<<<<<< HEAD
       # Misc
       def to_snake_case(name)
         # ExposedPorts -> _exposed_ports
@@ -12,6 +13,8 @@ module DockerCookbook
         name
       end
 
+=======
+>>>>>>> chef-vendor-docker
       ##########
       # coersion
       ##########
@@ -60,10 +63,17 @@ module DockerCookbook
                         end
       end
 
+<<<<<<< HEAD
       def with_retries(&_block)
         tries = api_retries
         begin
           yield
+=======
+      def with_retries(&block)
+        tries = api_retries
+        begin
+          block.call
+>>>>>>> chef-vendor-docker
           # Only catch errors that can be fixed with retries.
         rescue Docker::Error::ServerError, # 404
                Docker::Error::UnexpectedResponseError, # 400
@@ -95,7 +105,11 @@ module DockerCookbook
       end
 
       def default_tls_cert_path(v)
+<<<<<<< HEAD
         return nil unless ENV['DOCKER_CERT_PATH']
+=======
+        return false unless ENV['DOCKER_CERT_PATH']
+>>>>>>> chef-vendor-docker
         case v
         when 'ca'
           "#{ENV['DOCKER_CERT_PATH']}/ca.pem"
@@ -105,6 +119,17 @@ module DockerCookbook
           "#{ENV['DOCKER_CERT_PATH']}/key.pem"
         end
       end
+<<<<<<< HEAD
+=======
+
+      # recursively remove nil values from a hash
+      def compact!(v)
+        v.reject! do |_, value|
+          compact!(value) if value.is_a?(Hash)
+          value.nil?
+        end
+      end
+>>>>>>> chef-vendor-docker
     end
   end
 end

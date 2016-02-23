@@ -1,6 +1,10 @@
 module DockerCookbook
   class DockerServiceManagerUpstart < DockerServiceBase
+<<<<<<< HEAD
     resource_name :docker_service_manager_upstart
+=======
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     provides :docker_service_manager, platform: 'ubuntu'
     provides :docker_service_manager, platform: 'linuxmint'
@@ -12,6 +16,7 @@ module DockerCookbook
         group 'root'
         mode '0644'
         variables(
+<<<<<<< HEAD
           docker_name: docker_name,
           docker_daemon_arg: docker_daemon_arg
         )
@@ -28,6 +33,20 @@ module DockerCookbook
         )
         cookbook 'docker'
         notifies :restart, new_resource
+=======
+          config: new_resource,
+          docker_name: docker_name,
+          docker_cmd: docker_cmd,
+          docker_daemon_cmd: docker_daemon_cmd
+        )
+        cookbook 'docker'
+        notifies :restart, new_resource unless ::File.exist? "/etc/#{docker_name}-firstconverge"
+        notifies :restart, new_resource if auto_restart
+        action :create
+      end
+
+      file "/etc/#{docker_name}-firstconverge" do
+>>>>>>> chef-vendor-docker
         action :create
       end
 
@@ -36,6 +55,7 @@ module DockerCookbook
         supports status: true
         action :start
       end
+<<<<<<< HEAD
 
       # FIXME: why do we need this? This should be handled in init
       bash "docker-wait-ready #{name}" do
@@ -54,6 +74,8 @@ module DockerCookbook
             EOF
         not_if "#{docker_cmd} ps | head -n 1 | grep ^CONTAINER"
       end
+=======
+>>>>>>> chef-vendor-docker
     end
 
     action :stop do

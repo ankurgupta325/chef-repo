@@ -1,9 +1,15 @@
 module DockerCookbook
   class DockerImage < DockerBase
     require 'docker'
+<<<<<<< HEAD
     require_relative 'helpers_image'
 
     resource_name :docker_image
+=======
+    require 'helpers_image'
+
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     # Modify the default of read_timeout from 60 to 120
     property :read_timeout, default: 120, desired_state: false
@@ -11,7 +17,11 @@ module DockerCookbook
     # https://docs.docker.com/reference/api/docker_remote_api_v1.20/
     property :destination, [String, nil]
     property :force, Boolean, default: false
+<<<<<<< HEAD
     property :host, [String, nil], default: lazy { default_host }, desired_state: false
+=======
+    property :host, [String], default: lazy { default_host }, desired_state: false
+>>>>>>> chef-vendor-docker
     property :nocache, Boolean, default: false
     property :noprune, Boolean, default: false
     property :repo, String, name_property: true
@@ -19,10 +29,17 @@ module DockerCookbook
     property :source, String
     property :tag, String, default: 'latest'
 
+<<<<<<< HEAD
     alias image repo
     alias image_name repo
     alias no_cache nocache
     alias no_prune noprune
+=======
+    alias_method :image, :repo
+    alias_method :image_name, :repo
+    alias_method :no_cache, :nocache
+    alias_method :no_prune, :noprune
+>>>>>>> chef-vendor-docker
 
     #########
     # Actions

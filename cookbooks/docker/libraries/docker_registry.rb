@@ -1,9 +1,15 @@
 module DockerCookbook
   class DockerRegistry < DockerBase
     require 'docker'
+<<<<<<< HEAD
     require_relative 'helpers_auth'
 
     resource_name :docker_registry
+=======
+    require 'helpers_auth'
+
+    use_automatic_resource_name
+>>>>>>> chef-vendor-docker
 
     property :email, [String, nil]
     property :password, [String, nil]

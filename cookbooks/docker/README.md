@@ -16,7 +16,11 @@ aufs.
 
 Requirements
 ------------
+<<<<<<< HEAD
 - Chef 12.5.x or higher. Chef 11 is NOT SUPPORTED, please do not open issues about it.
+=======
+- Chef 12.0.0 or higher. Chef 11 is NOT SUPPORTED, please do not open issues about it.
+>>>>>>> chef-vendor-docker
 - Ruby 2.1 or higher (preferably, the Chef full-stack installer)
 - Network accessible web server hosting the docker binary.
 - SELinux permissive/disabled if CentOS [Docker Issue #15498](https://github.com/docker/docker/issues/15498)
@@ -29,6 +33,7 @@ able to get it working on other platforms, with appropriate
 configuration of cgroups and storage back ends.
 
 ```
+<<<<<<< HEAD
 |--------------+-------+-------+-------|--------|
 |              | 1.7.1 | 1.8.2 | 1.9.1 | 1.10.0 |
 |--------------+-------+-------+-------|--------|
@@ -46,6 +51,23 @@ configuration of cgroups and storage back ends.
 |--------------+-------+-------+-------|--------|
 | ubuntu-15.04 | X     | X     | X     | X      |
 |--------------+-------+-------+-------|--------|
+=======
+|--------------+-------+-------+-------|
+|              | 1.7.1 | 1.8.2 | 1.9.0 |
+|--------------+-------+-------+-------|
+| debian-8     | X     | X     | X     |
+|--------------+-------+-------+-------|
+| centos-7     | X     | X     | X     |
+|--------------+-------+-------+-------|
+| fedora-21    | X     | X     | X     |
+|--------------+-------+-------+-------|
+| ubuntu-12.04 | X     | X     | X     |
+|--------------+-------+-------+-------|
+| ubuntu-14.04 | X     | X     | X     |
+|--------------+-------+-------+-------|
+| ubuntu-15.04 | X     | X     | X     |
+|--------------+-------+-------+-------|
+>>>>>>> chef-vendor-docker
 ```
 
 Cookbook Dependencies
@@ -95,7 +117,11 @@ the `docker_service` resource like this:
 
 ```ruby
 docker_service 'default' do
+<<<<<<< HEAD
    storage_driver 'zfs'
+=======
+   storage_driver 'overlay'
+>>>>>>> chef-vendor-docker
 end
 ```
 
@@ -122,9 +148,12 @@ Resources Overview
 * `docker_tag`: image tagging operations
 * `docker_registry`: registry operations
 
+<<<<<<< HEAD
 * `docker_network`: network operations
 * `docker_volume`: volume operations
 
+=======
+>>>>>>> chef-vendor-docker
 ## Getting Started
 Here's a quick example of pulling the latest image and running a
 container with exposed ports.
@@ -145,7 +174,11 @@ docker_container 'my_nginx' do
   host_name 'www'
   domain_name 'computers.biz'
   env 'FOO=bar'
+<<<<<<< HEAD
   volumes [ '/some/local/files/:/etc/nginx/conf.d' ]
+=======
+  binds [ '/some/local/files/:/etc/nginx/conf.d' ]
+>>>>>>> chef-vendor-docker
 end
 ```
 
@@ -179,6 +212,7 @@ docker_container 'crowsnest' do
 end
 ```
 
+<<<<<<< HEAD
 You can manipulate Docker volumes and networks
 
 ```ruby
@@ -201,6 +235,8 @@ docker_container 'my_container' do
 end
 ```
 
+=======
+>>>>>>> chef-vendor-docker
 See full documentation for each resource and action below for more
 information.
 
@@ -271,14 +307,20 @@ This is the recommended production installation method.
 docker_installation_package 'default' do
   version '1.8.3'
   action :create
+<<<<<<< HEAD
   package_options %q|--force-yes -o Dpkg::Options::='--force-confold' -o Dpkg::Options::='--force-all'| # if Ubuntu for example
+=======
+>>>>>>> chef-vendor-docker
 end
 ```
 #### Properties
 - `version` - Used to calculate package_version string
 - `package_version` - Manually specify the package version string
 - `package_name` - Name of package to install. Defaults to 'docker-engine'
+<<<<<<< HEAD
 - `package_options` - Manually specify additional options, like apt-get directives for example
+=======
+>>>>>>> chef-vendor-docker
 
 ## docker_service_manager
 The `docker_service_manager` resource auto-selects one of the below
@@ -396,7 +438,10 @@ the options found in the
 - `host` - Daemon socket(s) to connect to - `tcp://host:port`,
   `unix:///path/to/socket`, `fd://*` or `fd://socketfd`
 - `icc` - Enable inter-container communication
+<<<<<<< HEAD
 - `insecure_registry` - Enable insecure registry communication
+=======
+>>>>>>> chef-vendor-docker
 - `ip` - Default IP when binding container ports
 - `ip_forward` - Enable ip forwarding
 - `ipv4_forward` - Enable net.ipv4.ip_forward
@@ -429,7 +474,10 @@ the options found in the
 - `tmpdir` - ENV variable set before for Docker daemon starts
 - `logfile` - Location of Docker daemon log file
 - `userland_proxy`- Enables or disables docker-proxy
+<<<<<<< HEAD
 - `disable_legacy_registry` - Do not contact legacy registries
+=======
+>>>>>>> chef-vendor-docker
 
 #### Actions
 - `:create` - Lays the Docker bits out on disk
@@ -812,7 +860,11 @@ end
 docker_container 'bind_mounter' do
   repo 'busybox'
   command 'ls -la /bits /more-bits'
+<<<<<<< HEAD
   volumes ['/hostbits:/bits', '/more-hostbits:/more-bits']
+=======
+  binds ['/hostbits:/bits', '/more-hostbits:/more-bits']
+>>>>>>> chef-vendor-docker
   action :run_if_missing
 end
 ```
@@ -1050,11 +1102,18 @@ Most `docker_container` properties are the `snake_case` version of the
 - `command` - The command to run when starting the container.
 - `autoremove` - Boolean - Automatically delete a container when it's
   command exits. Defaults to `false`.
+<<<<<<< HEAD
 - `volumes` - An array of volume bindings for this container. Each volume binding
    is a string in one of these forms:
     `container_path` to create a new volume for the container.
     `host_path:container_path` to bind-mount a host path into the container.
     `host_path:container_path:ro` to make the bind-mount read-only inside the container.
+=======
+- `binds` - An array of `:` separated paths to bind mount from the
+  host into the container in the form
+  `['/host-bits:/container-bits', '/more-host-bits:/more-container-bits']`.
+  Defaults to `nil`.
+>>>>>>> chef-vendor-docker
 - `cap_add` - An array Linux Capabilities (`man 7 capabilities`) to
   add to grant the container beyond what it normally gets.
 - `cap_drop` - An array Linux Capabilities (`man 7 capabilities`) to
@@ -1181,6 +1240,7 @@ docker_registry 'my local registry' do
 end
 ```
 
+<<<<<<< HEAD
 ## docker_network
 The `docker_network` resource is responsible for managing Docker named
 networks. Usage of `overlay` driver requires the `docker_service` to be
@@ -1251,6 +1311,8 @@ end
 - `:create` - create a network
 - `:remove` - create a network
 
+=======
+>>>>>>> chef-vendor-docker
 ## Testing and Development
 
 * Full development and testing workflow with Test Kitchen and friends: [TESTING.md](TESTING.md)
