@@ -1,7 +1,3 @@
-begin
-  require 'chef/provider'
-rescue LoadError; end
-
 require 'chef_compat/copied_from_chef'
 class Chef
 module ::ChefCompat

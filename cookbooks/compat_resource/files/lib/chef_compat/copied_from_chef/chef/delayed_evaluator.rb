@@ -1,7 +1,3 @@
-begin
-  require 'chef/delayed_evaluator'
-rescue LoadError; end
-
 require 'chef_compat/copied_from_chef'
 class Chef
 module ::ChefCompat
