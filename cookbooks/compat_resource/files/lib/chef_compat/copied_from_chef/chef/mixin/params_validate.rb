@@ -124,7 +124,7 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       end
 
       def set_or_return(symbol, value, validation)
-        property = SetOrReturnProperty.new(name: symbol, **validation)
+        property = SetOrReturnProperty.new(name= symbol, **validation)
         property.call(self, value)
       end
 
