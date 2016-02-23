@@ -3,8 +3,13 @@ class Chef
 module ::ChefCompat
 module CopiedFromChef
 #
+<<<<<<< HEAD
 # Author:: Adam Jacob (<adam@chef.io>)
 # Copyright:: Copyright 2008-2016, Chef Software Inc.
+=======
+# Author:: Adam Jacob (<adam@opscode.com>)
+# Copyright:: Copyright (c) 2008 Opscode, Inc.
+>>>>>>> chef-vendor-compat_resource
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,15 +24,25 @@ module CopiedFromChef
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+<<<<<<< HEAD
 require "chef_compat/copied_from_chef/chef/constants"
 require "chef_compat/copied_from_chef/chef/property"
 require "chef_compat/copied_from_chef/chef/delayed_evaluator"
+=======
+require 'chef_compat/copied_from_chef/chef/constants'
+require 'chef_compat/copied_from_chef/chef/property'
+require 'chef_compat/copied_from_chef/chef/delayed_evaluator'
+>>>>>>> chef-vendor-compat_resource
 
 class Chef < (defined?(::Chef) ? ::Chef : Object)
   module Mixin
     CopiedFromChef.extend_chef_module(::Chef::Mixin, self) if defined?(::Chef::Mixin)
     module ParamsValidate
       CopiedFromChef.extend_chef_module(::Chef::Mixin::ParamsValidate, self) if defined?(::Chef::Mixin::ParamsValidate)
+<<<<<<< HEAD
+=======
+
+>>>>>>> chef-vendor-compat_resource
       # Takes a hash of options, along with a map to validate them.  Returns the original
       # options hash, plus any changes that might have been made (through things like setting
       # default values in the validation map)
@@ -124,7 +139,7 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       end
 
       def set_or_return(symbol, value, validation)
-        property = SetOrReturnProperty.new(name= symbol, **validation)
+        property = SetOrReturnProperty.new(name: symbol, **validation)
         property.call(self, value)
       end
 
@@ -338,7 +353,10 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       def _pv_name_property(opts, key, is_name_property=true)
         if is_name_property
           if opts[key].nil?
+<<<<<<< HEAD
             raise CannotValidateStaticallyError, "name_property cannot be evaluated without a resource." if self == Chef::Mixin::ParamsValidate
+=======
+>>>>>>> chef-vendor-compat_resource
             opts[key] = self.instance_variable_get(:"@name")
           end
         end
@@ -406,6 +424,7 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
         return true if !opts.has_key?(key.to_s) && !opts.has_key?(key.to_sym)
         value = _pv_opts_lookup(opts, key)
         to_be = [ to_be ].flatten(1)
+<<<<<<< HEAD
         errors = []
         passed = to_be.any? do |tb|
           case tb
@@ -434,6 +453,24 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
             message << " Errors:\n#{errors.map { |m| "- #{m}" }.join("\n")}"
           end
           raise Exceptions::ValidationFailed, message
+=======
+        to_be.each do |tb|
+          case tb
+          when Proc
+            return true if instance_exec(value, &tb)
+          when Property
+            validate(opts, { key => tb.validation_options })
+            return true
+          else
+            return true if tb === value
+          end
+        end
+
+        if raise_error
+          raise Exceptions::ValidationFailed, "Option #{key} must be one of: #{to_be.join(", ")}!  You passed #{value.inspect}."
+        else
+          false
+>>>>>>> chef-vendor-compat_resource
         end
       end
 
@@ -454,14 +491,20 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       #
       def _pv_coerce(opts, key, coercer)
         if opts.has_key?(key.to_s)
+<<<<<<< HEAD
           raise CannotValidateStaticallyError, "coerce must be evaluated for each resource." if self == Chef::Mixin::ParamsValidate
           opts[key.to_s] = instance_exec(opts[key], &coercer)
         elsif opts.has_key?(key.to_sym)
           raise CannotValidateStaticallyError, "coerce must be evaluated for each resource." if self == Chef::Mixin::ParamsValidate
+=======
+          opts[key.to_s] = instance_exec(opts[key], &coercer)
+        elsif opts.has_key?(key.to_sym)
+>>>>>>> chef-vendor-compat_resource
           opts[key.to_sym] = instance_exec(opts[key], &coercer)
         end
       end
 
+<<<<<<< HEAD
       # We allow Chef::Mixin::ParamsValidate.validate(), but we will raise an
       # error if you try to do anything requiring there to be an actual resource.
       # This way, you can statically validate things if you have constant validation
@@ -469,6 +512,8 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       extend self
 
 
+=======
+>>>>>>> chef-vendor-compat_resource
       # Used by #set_or_return to avoid emitting a deprecation warning for
       # "value nil" and to keep default stickiness working exactly the same
       # @api private

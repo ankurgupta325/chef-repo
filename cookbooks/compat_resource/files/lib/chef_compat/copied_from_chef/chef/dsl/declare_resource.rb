@@ -3,9 +3,15 @@ class Chef
 module ::ChefCompat
 module CopiedFromChef
 #--
+<<<<<<< HEAD
 # Author:: Adam Jacob (<adam@chef.io>)
 # Author:: Christopher Walters (<cw@chef.io>)
 # Copyright:: Copyright 2008-2016, 2009-2015 Chef Software, Inc.
+=======
+# Author:: Adam Jacob (<adam@opscode.com>)
+# Author:: Christopher Walters (<cw@opscode.com>)
+# Copyright:: Copyright (c) 2008, 2009-2015 Chef Software, Inc.
+>>>>>>> chef-vendor-compat_resource
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -53,7 +59,11 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       #     action :delete
       #   end
       #
+<<<<<<< HEAD
       def declare_resource(type, name, created_at=nil, run_context= self.run_context, create_if_missing= false, &resource_attrs_block)
+=======
+      def declare_resource(type, name, created_at=nil, run_context: self.run_context, create_if_missing: false, &resource_attrs_block)
+>>>>>>> chef-vendor-compat_resource
         created_at ||= caller[0]
 
         if create_if_missing
@@ -91,10 +101,17 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
       #     action :delete
       #   end
       #
+<<<<<<< HEAD
       def build_resource(type, name, created_at=nil, run_context= self.run_context, &resource_attrs_block)
         created_at ||= caller[0]
         Thread.exclusive do
           require "chef_compat/copied_from_chef/chef/resource_builder" unless defined?(Chef::ResourceBuilder)
+=======
+      def build_resource(type, name, created_at=nil, run_context: self.run_context, &resource_attrs_block)
+        created_at ||= caller[0]
+        Thread.exclusive do
+          require 'chef_compat/copied_from_chef/chef/resource_builder' unless defined?(Chef::ResourceBuilder)
+>>>>>>> chef-vendor-compat_resource
         end
 
         Chef::ResourceBuilder.new(
@@ -105,7 +122,11 @@ class Chef < (defined?(::Chef) ? ::Chef : Object)
           run_context:         run_context,
           cookbook_name:       cookbook_name,
           recipe_name:         recipe_name,
+<<<<<<< HEAD
           enclosing_provider:  self.is_a?(Chef::Provider) ? self :  nil,
+=======
+          enclosing_provider:  self.is_a?(Chef::Provider) ? self :  nil
+>>>>>>> chef-vendor-compat_resource
         ).build(&resource_attrs_block)
       end
     end
