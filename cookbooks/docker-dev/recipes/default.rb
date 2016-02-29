@@ -10,7 +10,7 @@
 # Pull latest image
 docker_image 'nginx' do
   tag 'latest'
-  action :pull
+  action :pull_if_missing
   notifies :redeploy, 'docker_container[my_nginx]'
 end
 
