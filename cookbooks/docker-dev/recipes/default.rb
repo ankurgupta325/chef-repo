@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-docker_service 'default' do
-  action [:create, :start]
+docker_installation 'default' do
+  repo 'test'
+  action :create
 end
