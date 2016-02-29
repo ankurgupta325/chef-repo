@@ -6,21 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-
-# Pull latest image
-docker_image 'nginx' do
-  tag 'latest'
-  action :pull
-  notifies :redeploy, 'docker_container[my_nginx]'
-end
-
-# Run container exposing ports
-docker_container 'my_nginx' do
-  repo 'nginx'
-  tag 'latest'
-  port '80:80'
-  host_name 'ankugup-docker-dev'
-  domain_name 'corp.adobe.com'
-  env 'dev=dev'
-  volumes [ '/apps/docker/shared:/etc/nginx/conf.d' ]
+docker_service 'default' do
+  action [:create, :start]
 end
