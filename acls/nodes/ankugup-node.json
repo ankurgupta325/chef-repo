@@ -1,7 +1,6 @@
 {
   "create": {
     "actors": [
-      "ankugup-node",
       "pivotal"
     ],
     "groups": [
@@ -12,7 +11,6 @@
   },
   "read": {
     "actors": [
-      "ankugup-node",
       "pivotal"
     ],
     "groups": [
@@ -23,7 +21,6 @@
   },
   "update": {
     "actors": [
-      "ankugup-node",
       "pivotal"
     ],
     "groups": [
@@ -33,7 +30,6 @@
   },
   "delete": {
     "actors": [
-      "ankugup-node",
       "pivotal"
     ],
     "groups": [
@@ -43,7 +39,6 @@
   },
   "grant": {
     "actors": [
-      "ankugup-node",
       "pivotal"
     ],
     "groups": [

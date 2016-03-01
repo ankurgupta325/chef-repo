@@ -9,7 +9,7 @@
 
 
 include_recipe 'apache2'
-
+include_recipe 'selinux::permissive'
 apache_site "default" do
   enable true
   end
