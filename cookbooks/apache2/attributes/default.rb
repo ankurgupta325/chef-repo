@@ -246,7 +246,7 @@ else
   default['apache']['group']       = 'www-data'
   default['apache']['binary']      = '/usr/sbin/apache2'
   default['apache']['conf_dir']    = '/etc/apache2'
-  default['apache']['docroot_dir'] = '/var/www'
+  default['apache']['docroot_dir'] = '/var/www/html'
   default['apache']['cgibin_dir']  = '/usr/lib/cgi-bin'
   default['apache']['icondir']     = '/usr/share/apache2/icons'
   default['apache']['cache_dir']   = '/var/cache/apache2'
